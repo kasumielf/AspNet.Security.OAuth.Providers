@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/justeat/httpclient-interception/master/src/HttpClientInterception/Bundles/http-request-bundle-schema.json",
+  "items": [
+    {
+      "uri": "https://nid.naver.com/oauth2.0/token",
+      "method": "POST",
+      "contentFormat": "json",
+      "contentJson": {
+        "access_token": "secret-access-token",
+        "refresh_token": "secret-refresh-token",
+        "token_type": "access",
+        "expires_in": "300"
+      }
+    },
+    {
+      "uri": "https://reg.163.com/open/oauth2/getUserInfo.do",
+      "contentFormat": "json",
+      "contentJson": {
+        "resultcode": "00",
+        "message": "success",
+        "response": {
+          "id": "NpoHyTWpCXoCgGLV3Ew",
+          "nickname": "kasumielf",
+          "profile_image": "https://picsum.photos/id/237/200/300",
+          "age": "30-39",
+          "gender": "M",
+          "email": "example@naver.com",
+          "mobile": "010-7550-6413",
+          "mobile_e164": "+821012341234",
+          "name": "kasumielf",
+          "birthday": "08-28",
+          "birthyear": "1986"
+        }
+      }
+    }
+  ]
+}
